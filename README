@@ -4,7 +4,7 @@ This repository provides the implementation, data processing scripts, and evalua
 
 Python workflow for generating benchmark datasets and machine learning models from the MIMIC-IV-ED and MC-MED databases.
 
-## General Information
+### General Information
 
 Making timely and equitable decisions in the emergency department (ED) is critical for improving patient outcomes and ensuring efficient use of limited healthcare resources. In recent years, machine learning (ML)–based prediction models have been increasingly adopted to support triage, early warning, and clinical decision-making. However, concerns regarding algorithmic bias and fairness have limited their trust and adoption in real-world ED settings.
 
@@ -22,4 +22,4 @@ This repository provides a standardized workflow for:
 
 2. Training and evaluating multiple ML models for ED risk prediction, and
 
-3. Assessing and mitigating patient-level fairness disparities across gender, age, and race/ethnicity.
+3. Assessing and mitigating patient-level fairness disparities across sex, age, and race/ethnicity.
