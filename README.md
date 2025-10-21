@@ -33,12 +33,15 @@ This repository provides a standardized workflow for:
    - Extracting, cleaning, and harmonizing data from MIMIC-IV-ED and MC-MED.  
    - Standardizing variable definitions and preparing train/test splits.
 
-2. **Comprehensive Model Comparison and Evaluation**  
-   - Training and evaluating baseline models (e.g., Logistic Regression, Random Forest, Gradient Boosting, MLP).  
+2. **Comprehensive Model Comparison and Evaluation**
+   - Selected ED-specific outcomes
+     - (1) Utilization outcomes: hospitalization, ICU admission  
+     - (2) Disease-specific outcomes: sepsis, acute coronary syndrome, pulmonary embolism, acute heart failure, COPD or asthma exacerbations
+   - Training and evaluating baseline score NEWS and machine learning models (e.g., Logistic Regression, Random Forest, Gradient Boosting, MLP).  
    - Comparing model performance between BIDMC and Stanford datasets.  
    - Reporting AUROC, recall, FPR, and calibration across demographic subgroups.
 
-3. **Bias Mitigation Methods**  
+4. **Bias Mitigation Methods**  
    - Implementing pre-, in-, and post-processing fairness mitigation strategies.  
    - Evaluating fairness metrics such as Equal Opportunity Difference, Demographic Parity, and Equalized Odds.
 
