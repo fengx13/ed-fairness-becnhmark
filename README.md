@@ -35,7 +35,7 @@ metrics can be compared head-to-head across institutions.
 - **Utilization outcomes:** hospitalization (admission to a general ward or ICU); a composite
   *critical* outcome (ICU admission, ED death, or admission with ICU transfer within 12 hours).
 - **Acute disease-specific outcomes:** sepsis, pulmonary embolism (PE), acute coronary syndrome
-  (ACS), acute heart failure (AHF), and stroke — identified from structured ICD-9/10 codes
+  (ACS), acute heart failure (AHF), and stroke identified from structured ICD-9/10 codes
   (see `src/fair_ed/data/disease_defs.py`) and ED disposition.
 
 ## Models
@@ -52,8 +52,8 @@ Subgroup performance is evaluated across:
 - **Age (years):** 18–24, 25–34, 35–44, 45–54, 55–64, 65–74, ≥75
 - **Race/ethnicity:** Asian, Black/African American, Hispanic/Latino, White, Other
 
-reported through two notions — **Equal Opportunity** (equal sensitivity across groups) and
-**Equalized Odds** (equal TPR and FPR) — with 95% bootstrap confidence intervals. Sensitivity is
+Reported through two notions: **Equal Opportunity** (equal sensitivity across groups) and
+**Equalized Odds** (equal TPR and FPR) with 95% bootstrap confidence intervals. Sensitivity is
 the primary indicator and FPR is co-reported. See `src/fair_ed/evaluation/fairness.py`.
 
 ## Bias mitigation
