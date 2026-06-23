@@ -1,0 +1,55 @@
+cff-version: 1.2.0
+message: "If you use FairED, please cite the preprint below."
+title: "FairED: An Open Benchmarking Framework for Reproducible Evaluation of Algorithmic Fairness in Emergency Care Across Clinical Sites"
+authors:
+  - family-names: Mai
+    given-names: Xinnie
+    affiliation: University of Minnesota
+  - family-names: Liu
+    given-names: Yunqian
+    affiliation: Duke University
+  - family-names: Ning
+    given-names: Yilin
+    affiliation: Duke-NUS Medical School
+  - family-names: Wacker
+    given-names: David A.
+    affiliation: University of Minnesota
+  - family-names: Lin
+    given-names: Mingquan
+    affiliation: University of Minnesota
+  - family-names: Liu
+    given-names: Nan
+    affiliation: Duke-NUS Medical School
+  - family-names: Puskarich
+    given-names: Michael A.
+    affiliation: University of Minnesota
+  - family-names: Xie
+    given-names: Feng
+    affiliation: University of Minnesota
+date-released: 2026-05-19
+doi: 10.21203/rs.3.rs-9161309/v1
+url: "https://doi.org/10.21203/rs.3.rs-9161309/v1"
+license: MIT
+preferred-citation:
+  type: article
+  title: "FairED: An Open Benchmarking Framework for Reproducible Evaluation of Algorithmic Fairness in Emergency Care Across Clinical Sites"
+  doi: 10.21203/rs.3.rs-9161309/v1
+  year: 2026
+  notes: "Preprint, Research Square (Version 1)."
+  authors:
+    - family-names: Mai
+      given-names: Xinnie
+    - family-names: Liu
+      given-names: Yunqian
+    - family-names: Ning
+      given-names: Yilin
+    - family-names: Wacker
+      given-names: David A.
+    - family-names: Lin
+      given-names: Mingquan
+    - family-names: Liu
+      given-names: Nan
+    - family-names: Puskarich
+      given-names: Michael A.
+    - family-names: Xie
+      given-names: Feng

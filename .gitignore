@@ -1,0 +1,35 @@
+# Machine-specific data configuration (copy from configs/paths.example.yaml)
+configs/paths.yaml
+
+# Data & outputs — never commit credentialed PhysioNet data or derived datasets
+# (anchored to repo root so they don't match src/fair_ed/data/)
+/data/
+/outputs/
+*.csv
+*.parquet
+
+# Model checkpoints
+*.h5
+*.keras
+*.joblib
+*.pkl
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.eggs/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Local-only assistant guidance (not published)
+CLAUDE.md

@@ -1,0 +1,26 @@
+# FairED path configuration (template)
+#
+# Copy this file to `configs/paths.yaml` and fill in the locations of your local
+# data. `configs/paths.yaml` is gitignored so your machine-specific paths are
+# never committed. The raw datasets are NOT distributed with this repository;
+# both are available from PhysioNet under a credentialed data use agreement:
+#   - MIMIC-IV-ED (BIDMC cohort):  https://doi.org/10.13026/5ntk-km72
+#   - MC-MED      (Stanford cohort): https://doi.org/10.13026/jz99-4j81
+
+# --- Stanford / MC-MED raw CSV inputs (used by fair_ed.data.build_stanford) ---
+visits_path: /path/to/mcmed/visits.csv
+meds_path:   /path/to/mcmed/meds.csv
+pmh_path:    /path/to/mcmed/pmh.csv
+labs_path:   /path/to/mcmed/labs.csv
+
+# --- BIDMC / MIMIC-IV-ED root (see fair_ed.data.mimic readers) ---
+bidmc_dir:   /path/to/mimic-iv-ed
+
+# --- Outputs ---
+# Directory where build_stanford writes master_dataset.csv
+output_dir:  /path/to/output
+
+# Processed train/test splits produced by notebook 01 and consumed by the
+# modeling and mitigation notebooks (02-05).
+train_path:  /path/to/output/stanford_train.csv
+test_path:   /path/to/output/stanford_test.csv

@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fair-ed"
+version = "0.1.0"
+description = "FairED: an open benchmark for algorithmic fairness in emergency department risk stratification"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = [
+    "emergency medicine", "algorithmic fairness", "bias mitigation",
+    "machine learning", "health equity", "benchmarking", "clinical decision support",
+]
+authors = [
+    { name = "Xinnie Mai" },
+    { name = "Yunqian Liu" },
+    { name = "Yilin Ning" },
+    { name = "David A. Wacker" },
+    { name = "Mingquan Lin" },
+    { name = "Nan Liu" },
+    { name = "Michael A. Puskarich" },
+    { name = "Feng Xie" },
+]
+
+# Core dependencies needed to build datasets, train models, and run the
+# subgroup fairness evaluation. Pins target Python 3.10-3.13.
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.0",
+    "scipy>=1.11",
+    "scikit-learn>=1.3",
+    "xgboost>=2.0",
+    "fairlearn>=0.10",
+    "matplotlib>=3.7",
+    "pyyaml>=6.0",
+    "tqdm>=4.64",
+]
+
+[project.optional-dependencies]
+# Bias-mitigation methods (AIF360 + SMOTE). BlackBoxAuditing backs the
+# Disparate Impact Remover.
+mitigation = ["aif360>=0.6", "imbalanced-learn>=0.11", "BlackBoxAuditing>=0.1.54"]
+# Deep models / Adversarial Debiasing (TensorFlow backend).
+deep = ["tensorflow>=2.16"]
+# Plotting niceties used in the notebooks.
+viz = ["seaborn>=0.13"]
+# Everything, for full reproduction of the paper.
+all = ["aif360>=0.6", "imbalanced-learn>=0.11", "tensorflow>=2.16", "seaborn>=0.13", "jupyter>=1.0"]
+
+[project.urls]
+Repository = "https://github.com/fengx13/ed-fairness-becnhmark"
+Preprint = "https://doi.org/10.21203/rs.3.rs-9161309/v1"
+
+[project.scripts]
+fair-ed-build-stanford = "fair_ed.data.build_stanford:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+fair_ed = ["py.typed"]
